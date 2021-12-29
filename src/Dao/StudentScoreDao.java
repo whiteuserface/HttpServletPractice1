@@ -28,6 +28,21 @@ public class StudentScoreDao {
 			ps.executeUpdate();
 		} catch(Exception e) {
 			e.printStackTrace();
+		} finally {
+			if(con != null) {
+				try {
+					con.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(ps != null) {
+				try {
+					ps.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
 		}
 	}
 	
@@ -45,6 +60,21 @@ public class StudentScoreDao {
 			ps.executeUpdate();
 		} catch(Exception e) {
 			e.printStackTrace();
+		} finally {
+			if(con != null) {
+				try {
+					con.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(ps != null) {
+				try {
+					ps.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
 		}
 	}
 	
@@ -63,6 +93,21 @@ public class StudentScoreDao {
 		ps.executeUpdate();
 		} catch(Exception e) {
 			e.printStackTrace();
+		} finally {
+			if(con != null) {
+				try {
+					con.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(ps != null) {
+				try {
+					ps.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
 		}
 		
 	}
@@ -85,6 +130,28 @@ public class StudentScoreDao {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			if(con != null) {
+				try {
+					con.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(ps != null) {
+				try {
+					ps.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(rs != null) {
+				try {
+					rs.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
 		}
 	}
 	
@@ -111,6 +178,28 @@ public class StudentScoreDao {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			if(con != null) {
+				try {
+					con.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(ps != null) {
+				try {
+					ps.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(rs != null) {
+				try {
+					rs.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
 		}
 		return check;
 	}

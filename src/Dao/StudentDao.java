@@ -44,7 +44,7 @@ public class StudentDao {
 			con = DriverManager.getConnection(inputInfo.get(0),inputInfo.get(1),inputInfo.get(2));			
 		} catch(Exception e) {
 			e.printStackTrace();
-		}
+		} 
 		return con;
 	}
 	
@@ -75,6 +75,21 @@ public class StudentDao {
 			ps.executeUpdate();
 		} catch(Exception e) {
 			e.printStackTrace();
+		} finally {
+			if(con != null) {
+				try {
+					con.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(ps != null) {
+				try {
+					ps.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
 		}
 	}
 	
@@ -91,6 +106,21 @@ public class StudentDao {
 			ps.executeUpdate();
 		} catch(Exception e) {
 			e.printStackTrace();
+		} finally {
+			if(con != null) {
+				try {
+					con.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(ps != null) {
+				try {
+					ps.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
 		}
 	}
 	
@@ -111,6 +141,28 @@ public class StudentDao {
 			}
 		} catch(Exception e) {
 			e.printStackTrace();
+		} finally {
+			if(con != null) {
+				try {
+					con.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(ps != null) {
+				try {
+					ps.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(rs != null) {
+				try {
+					rs.close();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
 		}
 	}
 	
